@@ -1,0 +1,291 @@
+Stretch assignment 
+
+Plaster board.
+
+
+
+Some years from now, You'll which you have started earning today.
+
+
+
+
+HBCU - Historic Black Colledge University.
+GMAT or GRE
+
+Graduate assistanship.
+
+
+
+$482.00 and $363.00
+
+$3296.13
+
+
+sholyyem - Hat12oll@
+
+
+
+Kindly confirm if payment was successful.
+
+Regards
+
+
+AIX Fix Level Recommendation Tool Report is written to flrt.txt
+               
+http://www14.software.ibm.com/webapp/set2/flrt/report?os=aix&ucode=chriss&reportname=FLRT_from_snap_for_zendsibankstmts&mtm=9119-FHB&mhz=4004&fw=AH760_062&p1.parnm=zendsibankstmts&p1.aix=7100-03-02-1412
+                                
+AIX Microcode Discovery Service Report from is written to mds.html             
+https://ecurep.mainz.de.ibm.com/rest/download/01S7Y8T,804/2017-06-05/snap.pax.Z_unpack/mds.html                                                              
+
+
+DHL
+
+
+
+
+
+
+
+
+ACADEMIC EVALUATION SERVICES, INC
+
+
+
+
+0000652214 - Hakeem Olushola
+0003408983 - GTB
+0003408990 - Savings GTB
+
+
+XIV User details and Password
+14.10.202.1
+XIV TA Password Gen3 - Mg1Sb!Ar
+XIV TA Password Gen2 - teChn1cian
+xiv_maintenance -> x1vMa1nt
+xiv_maintenance -> Mg3Sb!Vz
+
+
+
+300
+
+
+
+ETS for UBA and FBN 
+GTMS Support for UBA, FBN and Skye.
+TSA for UBA, Spectranet and Zenith
+SRM for UBA
+
+Time Reporting..
+
+
+Contact for Heritage Bank
+
+V7k Update in Eprocess
+
+
+
+TEC_Cloud_3.0.8_with_MEA_University
+
+PLS REPLACE DRIVES ID72 (enclosure_id:4 slot_id:1)                  
+then pls remove ('Clean up') the Old Drive with the following       
+procedure:                                                          
+Go to the Physical Storage>Internal panel in the GUI                
+Select the old drive (will be offline) and select Actions -> Mark as -> Unused ( Note the drive must already be marked as failed | )     
+This will cause the offline drive object to be deleted from the system. Make New Drive Usable
+Select the new drive id (currently use=unused) and select Actions -> Mark as -> Candidate followed by Actions -> Mark as -> Spare     
+CLI commands:                                                       
+Take Offline => svctask chdrive -use failed <drive ID>              
+Mark as Unused => svctask chdrive -use unused <drive ID>            
+Mark as Candidate => svctask chdrive -use candidate <drive ID>      
+Mark as Spare => svctask chdrive -use spare <drive ID>  
+
+            
+charraymember -member arraymember -newdrive <new_drive_id> mdisk2
+
+
+
+
+AS400 part replacement Procedure
+
+1)Login to affected lpar as user who has authority for SST tool (STRSST command) - probably QSECOFR user - customer needs to know password for this user
+2)From command line type STRSST - enter
+3)Login to SST as QSECOFR user
+4) option 1.Start service tool
+5) option 7.Hardware service manager
+6) option 8.Device Concurrent Maintenance
+7) in row Device Resource Name type DD085 - and in row Action to be performed type 1 (Remove Device) -  enter
+8) orange LED is ON for affected HDD - then you can remove hdd pHysically from server
+9)enter 
+10)option 8.Device Concurrent Maintenance
+11)in row Device Resource Name type DD085 - and in row Action to be performed type 2 (Install Device) -  enter  
+12)orange LED is ON for affected slot - then you can install hdd pysically to server
+13)enter
+14)Go back to System Service Tool menu by F12
+15)option 3. Work with disk units
+16)option 3.Work with disk unit recovery
+17)option 6. Rebuild disk unit data
+18) select displayed disk unit and press enter
+(if some message about format disk unit is displayed you can use F10 for ignore this message)
+Then you can see status of disk by
+Go back to System Service Tool menu by F12
+option 3. Work with disk units
+option 1. Display disk configuration
+option 5. Display device parity status
+Now disk will be in status rebuilding during cca.1 hour . Then status will be active.
+You can sign off from SST menu  now (F3 or F12 - and on last display press enter) or you can leave it sign on for check status by customer.
+When disks in raid set are in status active procedure is done.
+
+
+Collecting Logs
+Service Action Log,
+STRSST
+1. Start a service tool
+7. Hardware service manager
+6.  Work with service action log
+...
+
+disk status
+1. Start a service tool
+3. Work with disk units
+1. Display disk configuration
+1. Display disk configuration status
+
+and print of configuration
+1. Start a service tool
+7. Hardware service manager
+ F6=Print configuration
+
+
+
+Resetting CMM of PureFlex using CLI
+reset -T blade[x]:sp  -  to reset pureflex IMM through CMM CLI.
+console -T blade[x]
+console -o -T system:blade[x]
+
+
+
+Connecting Serial cable on Linus
+dmesg | grep tty
+setserial -g /dev/ttyS[0123]
+######  cu -l /dev/device -s baud-rate-speed
+cu -l /dev/ttyS0 -s 19200 (38200 or 57600)
+
+DS4000/DS500 serial connection commands
+
+VxWorks login:shellUsr
+Password: wy3oo&w4
+
+RUN netCfgSet/netCfgShow COMMAND TO FIND CURRENT IP ADRESS OF CONTROLLERS
+ADD THE STORAGE TO STORAGE MANAGER USING THIS IP ADRESS        
+COLLECT SUPPORT DATA AND UPLOAD IT TO THE CALL 
+
+isp clearSYMbolPassword or spriMenuPwdReset (then y) or symbolPwdReset
+
+
+
+Turning of Amber on Power Blade
+Configure ASMI IP on AMM http://www-01.ibm.com/support/docview.wss?uid=nas8N1013863
+https://IP
+At the command line, type diagmenu and press Enter.
+From the Function Selection menu, select Task Selection and press Enter.
+From the Task Selection menu, select Identify and Attention Indicators and press Enter. 
+
+
+
+Collecting hscpe.
+login with userid hscpe
+> pedbg –c –q 3 9
+required file is in /dump
+named "HMClogs*****.zip".
+get it remotely:
+pscp -scp hscroot@<ip.address.of.HMC>:/dump/HMClogs*****.zip HMClogs*****.zip
+
+
+
+VMware vSphere Hypervisor 6 License -	HM682-4UL00-68X89-0H2KM-8EPJ0
+VMware vSphere Hypervisor 5 License -	00230-02L45-W8W40-0U9A0-C8207
+
+
+
+ACTIONS TO PROCEED:                                                  
+REPLACE FAILED STGIOA - RESOURCE NAME CMB10.                         
+THEN RE-IPL SERVER IN MANUAL MODE TO DST AND CHECK DISK STATUS.      
+IF SAME OF DISKS WILL FAILED,REPLACE IT TOO -DD008.                  
+IF ALL DISKS WILL BE CONFIGURED THEN TRY TO START IPL TO NORMAL MODE.
+
+you need to start SST then option 7.Hw service manager , then option 3.Locate hw by location code - then type CMB10 as resource name - when resource name is shown,set option 5 and then set option 8 - there will be shown location code of this adapter... 8
+
+To replace a bad disk drive in a mirrored volume group, enter
+lscfg  -v -l hdiskX	to find location of drive
+unmirrorvg rootvg hdiskX
+reducevg rootvg hdiskX
+rmdev -Rdl hdiskX
+replace the disk drive using diag menu
+extendvg rootvg hdiskX
+mirrorvg rootvg hdiskX
+bosboot -ad hdiskX
+syncvg -v rootvg
+bootlist -m normal hdiskX hdiskY
+
+
+
+
+08164201445 NERC Joseph John
+
+
+
+
+192.168.1.151/152
+
+01S78sB
+
+
+
+FBN Machine FW details:
+9119-FHA (01EH350 - 172) - supports V8R850 SP1
+9119-FHB (01AH780 - 71) Finacle10 - supports V8R850 SP1
+9119-FHB (01AH780 - 54) - supports V8R850 SP1
+9119-FHB (01AH760 43) Fundamo - supports V8R850 SP1
+7895-23A (01AF783 - 22) - - supports V8R850 SP1
+7954-24X (01AF783 - 27) and (01AF783 - 36) - supports V8R850 SP1
+
+
+
+
+08070310685- Uaifo from Gbenga.
+
+
+3595 TS1130
+
+
+                                  
+
+
+
+
+ASU commands
+asu64.exe set SYSTEM_PROD_DATA.SysInfoSerialNum 06FLCET --host 192.168.70.125 --user AIICOIT --password PASSW0RD
+asu64.exe set SYSTEM_PROD_DATA.SysInfoProdName 9532AC1 --host 192.168.70.125 --user USERID --password PASSW0RD
+
+asu64.exe show SYSTEM_PROD_DATA.SysInfoSerialNum --host 192.168.70.125 --user USERID --password PASSW0RD
+asu64.exe showSYSTEM_PROD_DATA.SysInfoProdName --host 192.168.70.125 --user USERID --password PASSW0RD
+
+
+IQYY Log
+In HMC Enchanced GUI choose the server --> on the left choose the service icon (screwdriver and wrench)
+--> Servicability --> Service Management --> Create Servicable Event -->Problem Description
+(collecting the logs)-->Request Service
+In HMC Problem log the record   xx will be created ,
+for this record HMC will create  xx.zip and additionalxx.zip files .
+You can get them remotely .
+Install pscp application on your workstation from the link:
+http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+and execute :
+pscp -scp hscroot@<ip.address.of.HMC>:/data/sfp/vr/xx/xx.zip xx.zip
+pscp -scp hscroot@<ip.address.of.HMC>::/data/sfp/vr/xx/additionalxx.zip additionalxx.zip
+
+To upload logs please use http://www.ecurep.ibm.com/app/upload_rcms
+RCMS ticket id     - XXXXXXX (  in email subject )
+Country        - 804
+
+
